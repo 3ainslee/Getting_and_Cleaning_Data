@@ -5,8 +5,6 @@ download.file(dataset_url, "uci_har_dataset.zip")
 ##Unzips the dataset into a folder called uci_har_dataset
 unzip("uci_har_dataset.zip", exdir="uci_har_dataset")
 
-
-
 ##Reading each file in the folder created
 subject_test <- read.table("uci_har_dataset/UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = ' ')
 subject_train <- read.table("uci_har_dataset/UCI HAR Dataset/train/subject_train.txt",header = FALSE, sep = ' ')
@@ -33,20 +31,17 @@ names(test) <- c(c('subject', 'activity'), features)
 mergedata <- rbind(train, test)
 
 
-
 ##Question 2. Extracting only mean and standard deviation values from the merged dataset
 meansd<- grep("mean|std", features)
 dataset <- mergedata[,c(1,2, meansd + 2)]
 
 
 ##Question 3. Use descriptive activity names to name the activities in the dataset created in step 2
-
 activity_labels <- as.character(activity_labels[,2])
 dataset$activity <- activity_labels[dataset$activity]
 
 
 ##Question 4. Appropriately label the dataset with descriptive activity names
-
 newnames <- names(dataset)
 newnames <- gsub("[(][)]", "", newnames)
 newnames <- gsub("-", "_", newnames)
