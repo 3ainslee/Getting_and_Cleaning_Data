@@ -6,9 +6,9 @@ The run_analysis.R script in this repository works as follows:
 1. It first downloads the data set from the target URL into the working directory.
 2. The downloaded file is then unzipped into a folder called "uci_har_dataset".
 3. The files in the folders are read.
-4. The training datasets are merged. Following merging, the column names for  this dataset are changed to 'subject' and 'activity'.
-5. The testing datasets are merged next. Following merging, the column names for  this dataset are changed to 'subject' and 'activity'.
-6. The training and testing datasets (both now containing similar column names) are subsequently merged.
+4. The training datasets are merged. Following merging, the column names for the training dataset are changed to 'subject' and 'activity'.
+5. The test datasets are merged next. Following merging, the column names for the test dataset are changed to 'subject' and 'activity'.
+6. The training and test datasets (both now containing similar column names) are subsequently merged.
 7. Next, the script goes on to extract only the mean and standard deviation values from the merged dataset.
 8. Descriptive activity names are subsequently applied to name the activities in the dataset created in step 7.
 9. The script then labels the dataset with descriptive variable names.
