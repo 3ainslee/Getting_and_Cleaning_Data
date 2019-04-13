@@ -222,3 +222,12 @@ Frequency_domain_Body_Accelerometer__Magnitude__MeanFreq:
 
 The Transfomations
 ==================
+The variables listed above have been re-labeled from their original names so that the names appear more descriptive (and thus, tidier). This was achieved as follows: 
+1. Removing all instances of () and -
+2. Replacing the character t with Time_domain
+3. Replacing the character f with Frequency_domain
+4. Replacing mag with Magnitude
+5. Replacing acc with Accelerometer
+6. Replacing Gyro with Gyroscope
+7. Replacing std with Standard_deviation
+8. Replacing mean with Mean
