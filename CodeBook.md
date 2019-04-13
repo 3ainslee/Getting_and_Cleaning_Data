@@ -2,41 +2,35 @@ This code book describes the variables, and transformations that was performed t
 
 The Variables
 =============
-subject
+subject:
 Contains the values 1-30, which refers to 30 total testers. Each value (i.e., 1-30) occurs 6 times, corresponding to each tester   
 having performed the 6 activities listed in variable 2 below.
    
-activity
-Corresponds to 1 of 6 activities performed by each tester: 
--WALKING
--WALKING_UPSTAIRS
--WALKING_DOWNSTAIRS
--SITTING
--STANDING  
--LAYING
+activity:
+Corresponds to 1 of 6 activities performed by each tester: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
     
-Time_domain_Body_Accelerometer__Mean_X 
+Time_domain_Body_Accelerometer__Mean_X: 
     Calculated average of the Time Body Acceleration Mean measurement, corresponding to the X directional axis.
     
-Time_domain_Body_Accelerometer__Mean_Y                                   
+Time_domain_Body_Accelerometer__Mean_Y:                                   
     Calculated average of the Time Body Acceleration Mean measurement, corresponding to the Y directional axis.
     
-Time_domain_Body_Accelerometer__Mean_Z                                     
+Time_domain_Body_Accelerometer__Mean_Z:                                     
     Calculated average of the Time Body Acceleration Mean measurement, corresponding to the Z directional axis.
     
-Time_domain_Body_Accelerometer__Standard_deviation_X                    
+Time_domain_Body_Accelerometer__Standard_deviation_X:                    
     Calculated average of the Time Body Acceleration standard deviation measurement, corresponding to the X directional axis.
 
-Time_domain_Body_Accelerometer__Standard_deviation_Y
+Time_domain_Body_Accelerometer__Standard_deviation_Y:
     Calculated average of the Time Body Acceleration standard deviation measurement, corresponding to the Y directional axis.
 
-Time_domain_Body_Accelerometer__Standard_deviation_Z
+Time_domain_Body_Accelerometer__Standard_deviation_Z:
     Calculated average of the Time Body Acceleration standard deviation measurement, corresponding to the Z directional axis.
 
-Time_domain_Gravity_Accelerometer__Mean_X
+Time_domain_Gravity_Accelerometer__Mean_X:
     Calculated average of the Time Gravity Acceleration mean measurement, corresponding to the X directional axis.
 
-Time_domain_Gravity_Accelerometer__Mean_Y
+Time_domain_Gravity_Accelerometer__Mean_Y:
     Calculated average of the Time Gravity Acceleration mean measurement, corresponding to the Y directional axis.
 
 Time_domain_Gravity_Accelerometer__Mean_Z
